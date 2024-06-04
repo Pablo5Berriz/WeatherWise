@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background-image: url('../static/weather.jpg');
+    width: 100%; 
+    height:auto; 
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+img {
+    margin-right: 30px;
+    width: 100px;
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(6, 37, 54);
+}
+
+#current-time {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+.container {
+    background: rgba(119, 117, 117, 0.5);
+    padding: 8%;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(37, 33, 33);
+    margin: 10px;
+    border-radius: 10px;
+}
+input, button {
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    font-size: 16px;
+    align-items: center;
+    width: 50%; 
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+}
+
+button {
+    display: block; 
+    margin: 0 auto; 
+    background-color: #053e4d;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #63ddf8;
+}
+
+#weather-result {
+    margin-top: 20px;
+}
+
+#Name {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Description {
+    background-color: rgba(70, 41, 41, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Temp {
+    background-color: rgba(170, 119, 23, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Humidite {
+    background-color: rgba(170, 11, 11, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Vent {
+    background-color: rgba(231, 250, 247, 0.918);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Lever {
+    background-color: rgba(245, 192, 19, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Coucher {
+    background-color: rgba(122, 72, 5, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#TempR {
+    background-color: rgba(40, 212, 224, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Precipitation {
+    background-color: rgba(91, 63, 190, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Visibilite {
+    background-color: rgba(167, 61, 140, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.footer a {
+    color: #2193b0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #6dd5ed;
+}
+
