@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baD1411NQApFmC26EwAOH8WgZ15MYYFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body onload="setDefaultLocation(); updateTime();">
+    <header class="header">
+        <div id="current-time"></div>
+        <img src="{{ url_for('static', filename='WeatherWise.png') }}" alt="Logo de WeatherWise" class="logo"/>
+        <h1>WeatherWise</h1>
+                    
+        </div>  
+    </header>    
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm my-3">
+            <form id="weather-form">
+                <div class="form-group">
+                    <input type="text" id="city" name="city" placeholder="Entrez une ville">
+                </div>
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+        
+        <div id="weather-result" class="col-12 col-sm-6 d-flex justify-content-center my-3">
+            <div class="box-container">
+                <div id="Name" class="box"></div>
+                <div id="Description" class="box"></div>
+                <div id="Temp" class="box"><i class="fa-solid fa-temperature-three-quarters"></i></div>
+                <div id="Humidite" class="box"><i class="fa-thin fa-droplet-percent"></i></div>
+                <div id="Vent" class="box"><i class="fa-solid fa-wind"></i></div>
+                <div id="Lever" class="box"><i class="fa-regular fa-sunrise"></i></div>
+                <div id="Coucher" class="box"><i class="fa-regular fa-sunset"></i></div>
+                <div id="TempR" class="box"><i class="fa-sharp fa-solid fa-temperature-list"></i></div>
+                <div id="Precipitation" class="box"><i class="fa-regular fa-raindrops"></i></div>
+                <div id="Visibilite" class="box"><i class="fa-regular fa-cloud-fog"></i></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 WeatherWise. Tous droits réservés.</p>
+            <br>
+            <p>Source des données: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
